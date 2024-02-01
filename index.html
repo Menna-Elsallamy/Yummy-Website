@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon" href="./logo.png">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./CSS/Style.css">
+</head>
+
+<body>
+
+    <body>
+        <!-- LOADING SCREEN -->
+        <div
+            class="position-fixed top-0 start-0 end-0 bottom-0 bg-black d-flex justify-content-center align-items-center d-none">
+            <div id="lds-ring" class="lds-ring ">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="loadingscreen"
+            class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black d-flex justify-content-center align-items-center">
+            <div class="lds-default">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- LOADING SCREEN -->
+
+        <!-- CONTACT SECTION -->
+
+        <div class="container w-75  mt-3 d-none" id="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <input type="text" class="form-control mb-2" id="Site Name" placeholder="Enter your Name">
+                        <div id="namealert" class="text-center bg-light rounded-2 p-2 fs-4 namealert d-none">Special
+                            characters and numbers not allowed</div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <input type="email" class="form-control mb-2" id="Site Email" placeholder="Enter your Email">
+                        <div id="emailalert" class="text-center bg-light rounded-2 p-2 fs-4 d-none">Email not valid
+                            *example@yyy.zzz
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <input type="tel" class="form-control mb-2" id="Site Phone" placeholder="Enter Your Phone">
+                        <div id="phonealert" class="text-center bg-light rounded-2 p-2 fs-4 d-none">Enter valid Phone
+                            Number</div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <input type="number" class="form-control mb-2" id="Site Age" placeholder="Enter your Age">
+                        <div id="agealert" class="text-center bg-light rounded-2 p-2 fs-4 d-none">Enter valid Phone Age
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <input type="password" class="form-control mb-2" id="Password"
+                            placeholder="Enter your Password">
+                        <div id="passwordalert" class="text-center d-none bg-light rounded-2 p-2 fs-4">Enter valid
+                            password *Minimum eight characters, at least one letter and one number:*</div>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <input type="password" class="form-control mb-2" id="Repassword" placeholder="Repassword">
+                        <div id="Repasswordalert" class="text-center bg-light rounded-2 p-2 fs-4 d-none">Enter valid
+                            repassword</div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><button id="redbtn"
+                        class="btn btn-outline-danger text-center">Submit</button></div>
+            </div>
+
+        </div>
+        <!-- CONTACT SECTION -->
+
+        <!-- SEARCH SECTION -->
+
+        <div class="container w-75 d-none mt-3" id="search">
+            <div class="container">
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Search by name">
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <input type="text" class="form-control" id="exampleFormControlInput2"
+                            placeholder="Search by first letter" maxlength="1" pattern="[a-zA-Z]">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- SEARCH SECTION -->
+
+
+        <!-- SIDEBAR -->
+        <section id="sideBar" class="d-flex min-vh-100 position-fixed top-0">
+            <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-4 sideBar-inner">
+                <div class="links">
+                    <ul class="list-unstyled ">
+                        <li class="py-2 position-relative cursor-pointer text-white animate__animated animate__fadeInUp animate__duration-1s" "><a href="
+                            #Search" class="text-decoration-none search text-white">Search</a></li>
+                        <li class="py-2 position-relative cursor-pointer text-white animate__animated animate__fadeInUp animate__delay-1s" "><a href="
+                            #Search" class="text-decoration-none text-white Categories">Categories</a></li>
+                        <li class="py-2 position-relative cursor-pointer text-white animate__animated animate__fadeInUp animate__delay-2s" "><a href="
+                            #Search" class="text-decoration-none text-white area">Area</a></li>
+                        <li class="py-2 position-relative cursor-pointer text-white animate__animated animate__fadeInUp animate__delay-3s" "><a href="
+                            #Search" class="text-decoration-none text-white Ingredients">Ingredients</a></li>
+                        <li class="py-2 position-relative cursor-pointer text-white animate__animated animate__fadeInUp animate__delay-4s" "><a href="
+                            #Search" class="text-decoration-none text-white Contact Us">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook text-white"></i>
+                        <i class="fa-brands fa-twitter text-white"></i>
+                        <i class="fa-solid fa-globe text-white"></i>
+                    </div>
+                    <div class="footer text-white">
+                        <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+                <img class="logo" width="80px" src="./logo.png" alt="" srcset="">
+                <i class="fa-solid open-close-icon fa-2x fa-align-justify self"></i>
+                <i class="fa-solid fa-x clostBtn fa-2x"></i>
+                <div>
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </section>
+        <!-- SIDEBAR -->
+
+        <!-- DISPLAY MEALS SECTION -->
+        <div class="container">
+            <div class="row py-5 g-4 " id="mealscartoona">
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row py-5 g-4 d-none " id="detailscartoona">
+                <div class="col-md-4">
+                    <img class="w-100 rounded-3" src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg"
+                        alt="">
+                    <h2>Corba</h2>
+                </div>
+                <div class="col-md-8">
+                    <i class="fa-solid fa-x clostBtntwo fa-2x position-fixed end-0 p-2"></i>
+
+                    <h2>Instructions</h2>
+                    <p>Pick through your lentils for any foreign debris, rinse them 2 or 3 times, drain, and set aside.
+                        Fair warning, this will probably turn your lentils into a solid block that you’ll have to break
+                        up later
+                        In a large pot over medium-high heat, sauté the olive oil and the onion with a pinch of salt for
+                        about 3 minutes, then add the carrots and cook for another 3 minutes.
+                        Add the tomato paste and stir it around for around 1 minute. Now add the cumin, paprika, mint,
+                        thyme, black pepper, and red pepper as quickly as you can and stir for 10 seconds to bloom the
+                        spices. Congratulate yourself on how amazing your house now smells.
+                        Immediately add the lentils, water, broth, and salt. Bring the soup to a (gentle) boil.
+                        After it has come to a boil, reduce heat to medium-low, cover the pot halfway, and cook for
+                        15-20 minutes or until the lentils have fallen apart and the carrots are completely cooked.
+                        After the soup has cooked and the lentils are tender, blend the soup either in a blender or
+                        simply use a hand blender to reach the consistency you desire. Taste for seasoning and add more
+                        salt if necessary.
+                        Serve with crushed-up crackers, torn up bread, or something else to add some extra thickness.
+                        You could also use a traditional thickener (like cornstarch or flour), but I prefer to add
+                        crackers for some texture and saltiness. Makes great leftovers, stays good in the fridge for
+                        about a week.</p>
+                    <h3><span class="fw-bolder">Area : </span>Turkish</h3>
+                    <h3><span class="fw-bolder">Category : </span>Side</h3>
+                    <h3>Recipes :</h3>
+                    <ul class="list-unstyled d-flex g-3 flex-wrap">
+                        <li class="alert alert-info m-2 p-1">1 cup Lentils</li>
+                        <li class="alert alert-info m-2 p-1">1 large Onion</li>
+                        <li class="alert alert-info m-2 p-1">1 large Carrots</li>
+                        <li class="alert alert-info m-2 p-1">1 tbs Tomato Puree</li>
+                        <li class="alert alert-info m-2 p-1">2 tsp Cumin</li>
+                        <li class="alert alert-info m-2 p-1">1 tsp Paprika</li>
+                        <li class="alert alert-info m-2 p-1">1/2 tsp Mint</li>
+                        <li class="alert alert-info m-2 p-1">1/2 tsp Thyme</li>
+                        <li class="alert alert-info m-2 p-1">1/4 tsp Black Pepper</li>
+                        <li class="alert alert-info m-2 p-1">1/4 tsp Red Pepper Flakes</li>
+                        <li class="alert alert-info m-2 p-1">4 cups Vegetable Stock</li>
+                        <li class="alert alert-info m-2 p-1">1 cup Water</li>
+                        <li class="alert alert-info m-2 p-1">Pinch Sea Salt</li>
+                    </ul>
+
+                    <h3>Tags :</h3>
+                    <ul class="list-unstyled d-flex g-3 flex-wrap">
+
+                        <li class="alert alert-danger m-2 p-1">Soup</li>
+                    </ul>
+
+                    <a target="_blank" href="https://findingtimeforcooking.com/main-dishes/red-lentil-soup-corba/"
+                        class="btn btn-success">Source</a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=VVnZd8A84z4"
+                        class="btn btn-danger">Youtube</a>
+                </div>
+            </div>
+        </div>
+        <!-- DISPLAY MEALS SECTION -->
+
+        <!-- CATEGORIES SECTION -->
+        <div class="container d-none" id="Categories">
+            <div class="row g-3 py-5" id="categoriesCartoona">
+                <div class="col-md-3 border border-0" id="">
+                    <div class="card bg-black meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <div>
+                            <img class="w-100" src="./logo.png" alt="" srcset="">
+                            <div class="overlay">
+                                <h3 class="text">meat</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" id="">
+                    <div class="card meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <div>
+                            <img class="w-100" src="./logo.png" alt="" srcset="">
+                            <div class="overlay">
+                                <h3 class="text">meat</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" id="">
+                    <div class="card meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <div>
+                            <img class="w-100" src="./logo.png" alt="" srcset="">
+                            <div class="overlay ">
+                                <h3 class="text">meat</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CATEGORIES SECTION -->
+
+
+        <!-- AREA SECTION -->
+        <div class="container d-none" id="area">
+            <div class="row py-5 px-5 g-4" id="areaCartoona">
+                <div class="col-md-4 cursor-pointer">
+                    <i class="fa-solid fa-house-laptop fa-4x text-white"></i>
+                    <h2 class="text-white">America</h2>
+                </div>
+            </div>
+        </div>
+        <!-- AREA SECTION -->
+        <!-- INGREDIENTS SECTION -->
+        <div class="container d-none" id="Ingredients">
+            <div class="row py-5 g-4 " id="ingredientscartoona">
+                <div class="col-md-3">
+                    <div class="rounded-2 text-center cursor-pointer mealsss">
+                        <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+                        <h3 class="textt">Chicken</h3>
+                        <p>The chicken is a type of domesticated fowl, a subspecies of the red junglefowl (Gallus
+                            gallus). It is one of</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- INGREDIENTS SECTION -->
+
+    </body>
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/jquery-3.7.1.min.js"></script>
+    <script src="./Js/script.js"></script>
+</body>
+
+</html>
